@@ -66,6 +66,12 @@ Config.EnablePlayerManagement     = false -- Enable society managing (If you are
 Config.RemoveWeaponsAfterRPDeath  = true
 Config.RemoveCashAfterRPDeath     = true
 
+-- Points the player is teleported to after an RP death (RemoveItemsAfterRPDeath).
+-- The nearest entry to the player's death position is used.
+Config.RespawnPoints = {
+	{ coords = vector3(297.39, -603.67, 43.30), heading = 88.89 }
+}
+
 Config.Hospitals = {
 	CentralLosSantos = {
 
@@ -80,11 +86,11 @@ Config.Hospitals = {
 		},
 
 		AmbulanceActions = {
-			vector3(270.5, -1363.0, 23.5)
+			vector4(297.39, -603.67, 43.30, 88.89)
 		},
 
 		Pharmacies = {
-			vector3(230.1, -1366.1, 38.5)
+			vector4(294.64, -610.42, 43.35, 64.65)
 		},
 
 		Vehicles = {
